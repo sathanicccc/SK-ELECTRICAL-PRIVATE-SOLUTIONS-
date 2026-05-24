@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Electrical Private Solutions</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; }
+        header { background: #0b2240; color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        header h1 { font-size: 24px; color: #00d2ff; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(11,34,64,0.8), rgba(11,34,64,0.8)), url('hero-bg.jpg') center/cover; color: white; padding: 80px 20px; text-align: center; }
+        .hero h2 { font-size: 32px; margin-bottom: 10px; }
+        .hero p { font-size: 18px; margin-bottom: 20px; color: #ccc; }
+        .btn { background: #00d2ff; color: #0b2240; padding: 12px 25px; border: none; font-weight: bold; cursor: pointer; text-decoration: none; border-radius: 5px; }
+
+        /* Services */
+        .section { padding: 50px 20px; max-width: 1200px; margin: auto; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 28px; color: #0b2240; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .service-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #00d2ff; }
+        .service-card h3 { margin-bottom: 10px; color: #0b2240; }
+
+        /* Unlimited Gallery */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 6px; height: 200px; background: #ddd; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+        .gallery-item img:hover { transform: scale(1.05); }
+
+        /* Reviews Section */
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .review-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .reviewer-info { display: flex; align-items: center; margin-bottom: 10px; }
+        .reviewer-img { width: 50px; height: 50px; border-radius: 50%; background: #ccc; margin-right: 15px; object-fit: cover; }
+        .reviewer-name { font-weight: bold; color: #0b2240; }
+        .rating { color: #ffcc00; font-size: 18px; margin-top: 5px; }
+
+        footer { background: #0b2240; color: white; text-align: center; padding: 30px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SK ELECTRICAL PRIVATE SOLUTIONS</h1>
+        <p>Professional Electrical & Plumbing Engineering Services</p>
+    </header>
+
+    <section class="hero">
+        <h2>നിങ്ങളുടെ വീടിന് സുരക്ഷിതമായ ഒരു കരുതൽ!</h2>
+        <p>Experienced & Certified Technicians in Kochi & Ernakulam</p>
+        <a href="https://wa.me/YOUR_NUMBER" class="btn">Book Now (WhatsApp)</a>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Our Specialized Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>⚡ Electrical Works</h3>
+                <p>3-Phase Wiring, DB Dressing, Electrical Layout Designing, Fault Detection, Inverter & Appliance Installation.</p>
+            </div>
+            <div class="service-card">
+                <h3>💧 Plumbing Works</h3>
+                <p>Domestic & Commercial Plumbing, Sanitary & CP Fittings, Water Tank & Pump Installation, Leakage Solutions.</p>
+            </div>
+            <div class="service-card">
+                <h3>🛠️ Annual Maintenance</h3>
+                <p>വീടുകളിലെയും സ്ഥാപനങ്ങളിലെയും എല്ലാവിധ ഇലക്ട്രിക്കൽ-പ്ലംബിംഗ് അറ്റകുറ്റപ്പണികളും ഉത്തരവാദിത്തത്തോടെ ചെയ്തു നൽകുന്നു.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #eaeff2;">
+        <h2 class="section-title">Our Work Gallery (1000+ Completed Projects)</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="work1.jpg" alt="DB Dressing Work"></div>
+            <div class="gallery-item"><img src="work2.jpg" alt="3-Phase Wiring"></div>
+            <div class="gallery-item"><img src="work3.jpg" alt="Plumbing Routing"></div>
+            <div class="gallery-item"><img src="work4.jpg" alt="Sanitary Fitting"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">What Our Customers Say (Reviews)</h2>
+        <div class="reviews-grid">
+            
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <div class="reviewer-img"></div>
+                    <div>
+                        <div class="reviewer-name">Jinto Joseph (Kochi)</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p>"എന്റെ പുതിയ വീടിന്റെ 3-phase wiring ജോലികൾ വളരെ ഭംഗിയായി ചെയ്തു തന്നു. പ്രത്യേകിച്ച് DB Dressing കാണാൻ നല്ല ഫിനിഷിംഗ് ഉണ്ട്. Highly recommended!"</p>
+            </div>
+
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <div class="reviewer-img"></div>
+                    <div>
+                        <div class="reviewer-name">Suresh Kumar (Aluva)</div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p>"Plumbing ലീക്കായപ്പോ അടിയന്തരമായി വന്ന് ശരിയാക്കി തന്നു. നല്ല പെരുമാറ്റവും മാന്യമായ കൂലിയും. വളരെ തൃപ്തികരമാണ്."</p>
+            </div>
+
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <div class="reviewer-img"></div>
+                    <div>
+                        <div class="reviewer-name">Anjali Nair (Kakkanad)</div>
+                        <div class="rating">⭐⭐⭐⭐★</div>
+                    </div>
+                </div>
+                <p>"ഇലക്ട്രിക്കൽ ലേഔട്ട് ഡിസൈൻ ചെയ്തത് വളരെ ഹെൽപ്ഫുൾ ആയി. പ്ലാൻ ചെയ്ത സമയത്തിനുള്ളിൽ തന്നെ പണി പൂർത്തിയാക്കി നൽകി."</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 SK Electrical Private Solutions. All Rights Reserved.</p>
+        <p>Contact: +91 8921016567 | WhatsApp: +91 9778158839</p>
+        <p>Contact: 9633421052 | WhatsApp: +91 9633421052</p>
+    </footer>
+
+</body>
+</html>
+
